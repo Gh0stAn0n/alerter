@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#hidding all useless files for the user
+sudo mv git .git
+sudo mv lib .lib
+sudo mv python .python
+sudo mv setup-db.sh .setup-db.sh
+sudo mv setup-twistd.sh .setup-twistd.sh
+sudo mv vars.sh .vars.sh
+
+sudo bash .setup-twistd.sh
+sudo bash .setup-db.sh
+
+sudo rm .setup-twistd.sh
+sudo rm .setup-db.sh
+sudo rm setup

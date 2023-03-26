@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#reset all data from the previous honeypot session (MYSQL and locale file)
+cat <<EOF | mysql -rs -uroot -p
+DROP DATABASE pot_db;
+
+sudo rm /var/log/alerter/*
