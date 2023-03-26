@@ -10,9 +10,10 @@
   </p>
 </p>
 
-alerter is a honeypot program that allows users to create and manage SSH, FTP, and Telnet services using the Twisted engine for Python 3. The program stores all credentials on a local MySQL database and provides a monitoring tool to track all attacker attempts in real-time.
+alerter is a honeypot program that allows users to create and manage SSH, FTP, and Telnet services using the Twisted engine for Python3.
+The program stores all credentials on a local MySQL database and provides a monitoring tool to track all attacker attempts in real-time.
 
-With Alerter, users can easily detect suspicious activity on their services and take appropriate measures to protect their network. The program's monitoring tool provides valuable information such as the service being targeted, IP address of the attacker, their country of origin, username and password attempted, which can be used to create comprehensive dictionaries for use in pentesting.
+users can easily detect suspicious activity on their services and take appropriate measures to protect their network. The program's monitoring tool provides valuable information such as the service being targeted, IP address of the attacker, their country of origin, username and password attempted, which can be used to create comprehensive dictionaries for use in pentesting.
 
 ### Possibility and Capability
 
@@ -20,25 +21,23 @@ With Alerter, users can easily detect suspicious activity on their services and 
 
 - help and info menu doesn't require sudo privileges.
 
-- have 3 way to analyze the wanted file: 1=standard bash script, 2=argument script, 3=flag script (using arguments)
-
-- capable of doing almost every volatility commands since not every one of them use the same option. (if your suggested profile is for exemple VistaSP1x86, some command could require for exemple WinSP2x86)
-
-- will save the user general scans in a statistics file.
-
-- check if the new supposed output file or directory is already created. (instead of :: error cant write on 'file.txt' because 'file.txt' already exist :: you'll get file.2.txt or dir.2 then .3, .4, ect...)
-
-- check for every errors possible. (correct path, correct answers as input, if the mem file choosen is truly a mem file)
-
 - the required dependencies and libraries will be scanned and any missing packages will be installed automatically.
+
+- will set automatically the SQLdb if none exist.
+
+- have 3 way to alert the network: 1=standard bash script, 2=argument script, 3=script prompt
+
+- check for every errors possible. (correct path, correct input)
+
+- troubleshooting guidance at [file]()
+
+- could generate a pentest dictionnary based on the generated content from the attackers.
 
 >DISADVANTAGES:
 
-- since we can run the script using arguments and flags, we cant put errors message for the flags option using "else" because it will disable the arguments scipt and vice versa.
+- none
 
-- if incorrect arguments or flags are written, the standard script will run. (advantage as well)
-
-### 'analyzer' Project
+### 'alerter' Project
 
 a [project](https://github.com/Gh0stAn0n/alerter/files/9894648/project.pdf) made by [ThinkCyber](https://www.thinkcyber.co.il/).
 
@@ -50,11 +49,26 @@ Be Aware: the script could be different from the video since he got upgraded.
 
     git clone https://github.com/Gh0stAn0n/alerter /opt/alerter && cd /opt/alerter
 
+### Scripts Info
+
+setup - set all relevant information to enable the programs.
+
+start - start the honeypot.
+
+stop - stop the honeypot.
+
+restart - restart the honeypot.
+
+monitor - monitor the honeypot.
+
+reset - reset all data related to the previous honeypot sessions.
+
+
 ### Script Usage
 
 launch the script by typing:
 
-└─$ sudo bash setup
+└─$ sudo ./setup
 
 └─$ sudo ./alerter
 
