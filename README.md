@@ -5,7 +5,7 @@
       <a href="https://github.com/Gh0stAn0n/alerter">
       <img src="https://img.shields.io/badge/Version-1.0.0-darkgreen">
         <img src="https://img.shields.io/badge/Release%20Date-april%202022-purple">
-  <img src="https://shields.io/badge/Bash/Python-100%25-066da5">
+  <img src="https://shields.io/badge/Bash / Python-100%25-066da5">
   <img src="https://shields.io/badge/Platform-Linux-darkred">
     </a>
   </p>
