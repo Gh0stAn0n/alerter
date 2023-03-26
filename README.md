@@ -33,9 +33,9 @@ NOTICE: this program is the upgraded version of [twisted-honeypot](https://githu
 
 - check for every errors possible. (correct path, correct input)
 
-- troubleshooting guidance at [file]()
-
 - could generate a pentest dictionnary based on the generated content from the attackers.
+
+- troubleshooting guidance at [file]()
 
 >DISADVANTAGES:
 
