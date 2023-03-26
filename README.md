@@ -15,6 +15,8 @@ The program stores all credentials on a local MySQL database and provides a moni
 
 users can easily detect suspicious activity on their services and take appropriate measures to protect their network. The program's monitoring tool provides valuable information such as the service being targeted, IP address of the attacker, their country of origin, username and password attempted, which can be used to create comprehensive dictionaries for use in pentesting.
 
+[monitor](https://camo.githubusercontent.com/9f44b1a8324f280000428b0e7b95446ef7752418b2fcbf884163c1335a5eb6a8/68747470733a2f2f692e696d6775722e636f6d2f3570344752357a2e706e67)
+
 ### Possibility and Capability
 
 >ADVANTAGES:
@@ -23,7 +25,7 @@ users can easily detect suspicious activity on their services and take appropria
 
 - the required dependencies and libraries will be scanned and any missing packages will be installed automatically.
 
-- will set automatically the SQLdb if none exist.
+- will set automatically the MySQL database if none exist.
 
 - have 3 way to alert the network: 1=standard bash script, 2=argument script, 3=script prompt
 
