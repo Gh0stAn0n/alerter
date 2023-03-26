@@ -1,8 +1,0 @@
-#!/bin/bash
-
-sudo bash .setup-twistd.sh
-sudo bash .setup-db.sh
-
-sudo rm .setup-twistd.sh
-sudo rm .setup-db.sh
-sudo rm setup
