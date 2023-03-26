@@ -10,10 +10,12 @@
   </p>
 </p>
 
-alerter is a honeypot program that allows users to create and manage SSH, FTP, and Telnet services using the Twisted engine for Python3.
+alerter is an honeypot program that allows users to create and manage SSH, FTP, and Telnet services using the [Twisted](http://twistedmatrix.com/) engine for Python3.
 The program stores all credentials on a local MySQL database and provides a monitoring tool to track all attacker attempts in real-time.
 
 users can easily detect suspicious activity on their services and take appropriate measures to protect their network. The program's monitoring tool provides valuable information such as the service being targeted, IP address of the attacker, their country of origin, username and password attempted, which can be used to create comprehensive dictionaries for use in pentesting.
+
+NOTICE: this program is the upgraded version of [twisted-honeypot](https://github.com/lanjelot/twisted-honeypots)
 
 ![monitor](https://camo.githubusercontent.com/9f44b1a8324f280000428b0e7b95446ef7752418b2fcbf884163c1335a5eb6a8/68747470733a2f2f692e696d6775722e636f6d2f3570344752357a2e706e67)
 
