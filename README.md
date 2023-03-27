@@ -65,6 +65,8 @@ restart - restart the honeypot.
 
 monitor - monitor the honeypot.
 
+fire - set a firewall rules against all attackers ips.
+
 reset - reset all data related to the previous honeypot sessions.
 
 
