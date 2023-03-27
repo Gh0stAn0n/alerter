@@ -7,3 +7,7 @@ sudo mkdir -p /var/log/alerter
 touch /var/log/alerter/{ssh,ftp,telnet}-pot.log
 chown 1:1 /var/log/alerter/{ssh,ftp,telnet}-pot.log
 twistd --uid=1 --gid=1 --logfile=${TWISTED_LOG} --pidfile=${TWISTED_PID} --python=${TAC_FILE}
+
+echo ""
+ip=$(ip a show eth0 2>&1 | grep inet | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' | head -1)
+nmap $ip | tail -n +5
